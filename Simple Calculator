@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+cout << "Simple Calculator \n\nOperations that this calculator can perform are +,-,*,/\n" << endl;
+cout << "Pattern "<<endl;
+cout << "Enter Number1 operation Number2" << endl;
+cout << "=result\n" << endl;
+
+int i=1;
+do{ 
+
+double num1,num2;
+char chooseoperator;
+cin >> num1;
+cin>>chooseoperator;
+cin>> num2;
+
+switch(chooseperator){
+    case '+':
+    cout << "="<<num1+num2 << endl << endl;
+    break;
+    case '-':
+    cout << "="<<num1-num2 << endl << endl;
+    break;
+    case '*':
+    cout << "="<<num1*num2 << endl << endl;
+    break;
+    case '/':
+         if(num2!=0){
+                 cout << "="<<num1/num2 << endl << endl;}
+         else {cout << "Undefined" << endl << endl;}
+    break;
+    default:
+    cout << "Invalid Operator"<< endl << endl;
+    break;
+}
+} while(i=1);
+
+return 0;
+
+}
